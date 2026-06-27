@@ -1,0 +1,11 @@
+# formats
+*.mp4
+*.mp3
+*.exe
+*.img
+*.png
+# directories
+RFSs/
+CodingSkill/
+maktab_kernel/
+Datasets/
