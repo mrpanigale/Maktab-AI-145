@@ -1,4 +1,5 @@
-"""This is a CLI karvand manager that you can input Your command with a while loop , and each task has its function """
+"""This is a CLI karvand manager that you can input Your command with a while loop , and each task has its function"""
+
 APP_TITLE = "Karvand JSON Manager -Student Panel"
 # imports✔️
 # json library will be use for work with json file
@@ -144,13 +145,14 @@ def show_karvand(path: str):
 
         print(f"{'-'*40}")
 
+
 # ========================================================================
 # search karvand function✔️
 def search_karvand(path: str, user_id: int):
-    '''This function will find karvand by ID'''
-    karvands_dictionary = json_reader(path)['karvands']
+    """This function will find karvand by ID"""
+    karvands_dictionary = json_reader(path)["karvands"]
     for karvand in karvands_dictionary:
-        if karvand['id'] == user_id:
+        if karvand["id"] == user_id:
             print(f"🆔 ID: {karvand.get('id')}")
             print(f"👤 Name: {karvand.get('full_name')}")
             print(f"📍 City: {karvand.get('city')}")
@@ -167,7 +169,8 @@ def search_karvand(path: str, user_id: int):
             print(f"{'-'*40}")
             return None
     print(f"karvands with  <id : {user_id}> not found")
-    
+
+
 # ========================================================================
 # delet karvand function✔️
 def delet_karvand(path: str, user_id: int):
@@ -189,7 +192,9 @@ def delet_karvand(path: str, user_id: int):
 def report_karvands(path: str):
     """This function will tell us how many karvands exist in Bootcamp."""
     karvands = json_reader(path)["karvands"]
-    print(f"\n🟰🟰🟰🟰🟰🟰\n{len(karvands)} karvands exist in This Bootcamp!\n🟰🟰🟰🟰🟰🟰")
+    print(
+        f"\n🟰🟰🟰🟰🟰🟰\n{len(karvands)} karvands exist in This Bootcamp!\n🟰🟰🟰🟰🟰🟰"
+    )
 
 
 # ========================================================================
