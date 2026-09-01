@@ -8,7 +8,7 @@
 RFSs/
 .ipynb_checkpoints/
 .idea/
-/data
+**/data/
 CodingSkill/
 maktab_kernel/
 Datasets/
