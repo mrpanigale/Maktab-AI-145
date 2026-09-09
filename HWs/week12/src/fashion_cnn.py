@@ -76,7 +76,7 @@ history = run_experiment(
     loss_fn=loss_fn,
     optimizer=optimizer,
     device=DEVICE
-    ,epoch=3
+    ,epoch=8
 )
 
 #=========Save_Reports=========
