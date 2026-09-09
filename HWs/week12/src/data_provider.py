@@ -3,7 +3,6 @@ This file was created to provide the data
 loaders, datasets, and variables necessary
 for handling data in this project.
 """
-
 # ============imports==============
 from pathlib import Path
 
@@ -11,10 +10,19 @@ import torch
 from torch.utils.data import DataLoader, Subset
 from torchvision import datasets, transforms
 
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-data_root = Path("../data")
-SEED = 42
 
+# ============control randomness & Paths==============
+
+data_root = Path(__file__).parent.parent / "data"
+data_root.mkdir(parents=True,exist_ok=True)
+
+SEED = 42
+torch.manual_seed(SEED)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed(SEED)
+    torch.cuda.manual_seed_all(SEED)
+torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.benchmark = False
 
 # ============functions==============
 def provider(data_path):
