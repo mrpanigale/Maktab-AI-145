@@ -94,6 +94,6 @@ dsp = ConfusionMatrixDisplay(
     display_labels=class_names)
 dsp.plot()
 plt.savefig(plots_path/"FashionCNN.png")
-
+plt.close()
 
 print("Saved Successfully")
