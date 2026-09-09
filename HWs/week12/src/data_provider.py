@@ -25,9 +25,16 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
 # ============functions==============
-def provider(data_path):
+def provider(data_path,aug = False):
     """Return Loaders ; Datasets ; Variables"""
     # ============Base_transformer==============
+    augment_transform = transforms.Compose([
+        transforms.ToTensor(),
+        transforms.RandomHorizontalFlip(p=0.5),
+        transforms.RandomRotation(10),
+        transforms.ColorJitter(brightness=0.1),
+        transforms.Normalize(mean=[0.5], std=[0.5])
+    ])
     base_transform = transforms.Compose(
         [
             transforms.ToTensor(),
@@ -37,8 +44,13 @@ def provider(data_path):
     )
 
     # ============load_dataset==============
+    if aug:
+        train_transform = augment_transform
+    else:
+        train_transform = base_transform
+
     train_full = datasets.FashionMNIST(
-        root=data_path, train=True, download=True, transform=base_transform
+        root=data_path, train=True, download=True, transform=train_transform
     )
     test_full = datasets.FashionMNIST(
         root=data_path, train=False, download=True, transform=base_transform
