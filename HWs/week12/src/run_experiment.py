@@ -21,6 +21,8 @@ def run_epoch(model,loss_fn,loader,device,optimizer=None):
     total_loss = 0.0
     total_correct = 0
     total_examples = 0
+    all_logits = []
+    all_labels = []
     with torch.set_grad_enabled(is_training):
         for images, labels in loader:
             images, labels = images.to(device), labels.to(device)
@@ -36,11 +38,17 @@ def run_epoch(model,loss_fn,loader,device,optimizer=None):
             total_loss += loss.item() * labels.size(0)
             # Sum True = Total correct
             total_correct += (logits.argmax(dim=1) == labels).sum().item()
+            all_logits.extend(logits.argmax(dim=1).cpu().numpy())
+            all_labels.extend(labels.cpu().numpy())
 
     return {
         "loss":total_loss/total_examples,
         "accuracy":total_correct/total_examples,
-        "cm":confusion_matrix(labels.cpu().numpy(),y_pred = logits.argmax(dim=1).cpu().numpy())
+        "cm":confusion_matrix(
+            y_true=all_labels,
+            y_pred = all_logits,
+            labels=list(range(10))
+)
     }
 
 def run_experiment(model,loss_fn,train_loader,val_loader,device,optimizer=None,epoch = 8):
