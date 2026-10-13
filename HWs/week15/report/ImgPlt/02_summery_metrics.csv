@@ -1,0 +1,4 @@
+Method,Accuracy (%),Avg Tokens
+Direct,0.0,90.25
+Zero-shot CoT,100.0,449.5
+Self-Consistency (k=3),100.0,1454.0

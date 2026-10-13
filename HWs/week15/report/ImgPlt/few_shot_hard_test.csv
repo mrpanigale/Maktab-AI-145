@@ -1,0 +1,5 @@
+id,text,ground_truth,Zero-shot,Balanced,Imbalanced,Imbalanced_Reversed
+1,"Oh wonderful, another software update that broke every single feature I actually use.",Negative,Positive,Positive,Positive,Positive
+2,The package arrived at 3 PM on Tuesday and matched the dimensions on the box.,Neutral,Negative,Negative,Negative,Negative
+3,"The design is sleek and premium, though it frequently overheats and crashes under normal load.",Negative,Negative,Negative,Negative,Negative
+4,"It simply exists. It does what it is supposed to do, nothing more and nothing less.",Neutral,Positive,Positive,Positive,Positive

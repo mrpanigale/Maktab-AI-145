@@ -1,0 +1,5 @@
+id,text,ground_truth,Zero-shot,Balanced,Imbalanced,Imbalanced_Reversed
+1,"Battery lasts all day, best purchase I made this year!",Positive,Positive,Positive,Positive,Positive
+2,Customer service was utterly useless and rude.,Negative,Negative,Negative,Negative,Negative
+3,"The cinematography was breathtaking, but the pacing felt a bit dragged.",Negative,Negative,Negative,Negative,Negative
+4,"Not bad for the price, does the job well enough.",Positive,Positive,Positive,Positive,Positive

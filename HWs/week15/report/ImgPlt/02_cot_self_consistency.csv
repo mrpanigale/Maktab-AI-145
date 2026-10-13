@@ -1,0 +1,5 @@
+id,question,ground_truth,Direct_Pred,Direct_Tokens,CoT_Pred,CoT_Tokens,SC_Pred,SC_Tokens
+1,"A bakery makes 48 cupcakes in the morning. They sell 3/4 of them by noon. In the afternoon, they bake another 30 cupcakes and sell 1/3 of the total cupcakes they currently have. How many cupcakes are left at the end of the day?",28,26,86,28,384,28,1283
+2,"A train leaves Town A at 2:00 PM traveling at 60 mph towards Town B. Another train leaves Town B at 3:00 PM traveling at 80 mph towards Town A. The distance between Town A and Town B is 270 miles. At what time (in PM, just write the hour as integer, e.g. 4) will they meet?",4,5,106,4,505,4,1562
+3,"Amir has 5 shirts, 3 pairs of pants, and 2 pairs of shoes. However, 1 of the shirts does not match with 1 of the pants (this specific combination cannot be worn). How many total unique complete outfits (1 shirt, 1 pants, 1 shoes) can he make?",28,30,94,28,479,28,1502
+4,"A snail is at the bottom of a 20-foot well. Each day it climbs up 5 feet, but each night it slides down 2 feet. On which day will the snail finally reach the top of the well?",6,18,75,6,430,6,1469
