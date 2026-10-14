@@ -1,0 +1,36 @@
+review,prompt_only_valid,json_mode_valid,strict_schema_valid,prompt_only_output,json_mode_output,strict_schema_output
+"The battery life is stellar, lasting two full days easily.",True,True,True,"{
+  ""reasoning"": ""The review expresses a strong positive sentiment about the battery life, describing it as 'stellar' and indicating that it lasts 'two full days easily'. This language conveys satisfaction and approval."",
+  ""label"": ""positive""
+}","{
+  ""reasoning"": ""The review expresses a positive sentiment by highlighting the battery life as 'stellar' and indicating that it lasts 'two full days easily', which suggests satisfaction with the product's performance."",
+  ""label"": ""positive""
+}","{""reasoning"":""The review expresses a positive sentiment by highlighting the impressive battery life, describing it as 'stellar' and indicating that it lasts 'two full days easily.' This suggests satisfaction with the product's performance."",""label"":""positive""}"
+Customer service was utterly unhelpful and rude.,True,True,True,"{
+  ""reasoning"": ""The review expresses dissatisfaction with the customer service, describing it as 'utterly unhelpful and rude,' which indicates a negative experience."",
+  ""label"": ""negative""
+}","{
+  ""reasoning"": ""The review expresses dissatisfaction with the customer service, describing it as 'utterly unhelpful and rude,' which indicates a negative experience."",
+  ""label"": ""negative""
+}","{""reasoning"":""The review expresses dissatisfaction with the customer service, describing it as 'utterly unhelpful and rude.' This indicates a negative experience."",""label"":""negative""}"
+"The camera is decent, but the software has frequent glitches.",True,True,True,"{
+  ""reasoning"": ""The review expresses a mixed sentiment. While it acknowledges that the camera is 'decent,' it also highlights a significant issue with the software having 'frequent glitches,' which detracts from the overall experience. The presence of both a positive and a negative aspect leads to a neutral sentiment overall."",
+  ""label"": ""neutral""
+}","{
+  ""reasoning"": ""The review expresses a mixed sentiment. While it acknowledges that the camera is 'decent', it also highlights a significant issue with the software having 'frequent glitches', which suggests dissatisfaction. The presence of both positive and negative aspects leads to a neutral overall sentiment."",
+  ""label"": ""neutral""
+}","{""reasoning"":""The review expresses a mixed sentiment. While it acknowledges that the camera is 'decent', it also highlights a significant issue with the software having 'frequent glitches', which suggests dissatisfaction. The presence of both positive and negative aspects leads to a neutral overall sentiment."",""label"":""neutral""}"
+"Not worth the ticket, though the visual effects were neat.",True,True,True,"{
+  ""reasoning"": ""The review expresses disappointment by stating that the experience was 'not worth the ticket,' which indicates a negative sentiment. However, it acknowledges a positive aspect by mentioning that the visual effects were 'neat.' Overall, the negative sentiment outweighs the positive comment."",
+  ""label"": ""negative""
+}","{
+  ""reasoning"": ""The review expresses a negative sentiment overall, as the phrase 'Not worth the ticket' indicates disappointment or dissatisfaction with the value of the experience. Although it acknowledges that the visual effects were 'neat,' this positive aspect does not outweigh the overall negative impression."",
+  ""label"": ""negative""
+}","{""reasoning"":""The review expresses a negative sentiment overall, as it states that the experience was 'not worth the ticket.' Although it acknowledges that the visual effects were 'neat,' this positive aspect does not outweigh the overall dissatisfaction with the value of the experience."",""label"":""negative""}"
+It arrived on time.,True,True,True,"{
+  ""reasoning"": ""The review expresses a positive sentiment by highlighting that the item arrived on time, which is generally considered a favorable aspect of a service or product."",
+  ""label"": ""positive""
+}","{
+  ""reasoning"": ""The review states that the item arrived on time, which indicates a positive experience regarding the delivery aspect. There are no negative or neutral sentiments expressed."",
+  ""label"": ""positive""
+}","{""reasoning"":""The review states that the item arrived on time, which indicates a satisfactory experience with the delivery. There are no negative or neutral sentiments expressed, so it can be classified as positive."",""label"":""positive""}"
