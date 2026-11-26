@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Maktab-145.iml" filepath="$PROJECT_DIR$/.idea/Maktab-145.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/handson-mlp.iml" filepath="$PROJECT_DIR$/.idea/handson-mlp.iml" />
     </modules>
   </component>
 </project>
